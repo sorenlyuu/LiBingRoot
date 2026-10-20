@@ -1,0 +1,31 @@
+{
+	"name": "@libing/bot",
+	"author": "",
+	"description": "libing Bot",
+	"version": "1.0.0",
+	"private": true,
+	"engines": {
+		"node": ">=22"
+	},
+	"dependencies": {
+		"@rootsdk/server-bot": "*",
+		"axios": "^1.20.0",
+		"cors": "^2.8.6",
+		"dotenv": "^18.0.8",
+		"express": "^5.3.0"
+	},
+	"devDependencies": {
+		"@rootsdk/dev-tools": "*",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.6",
+		"typescript": "^5.8.2"
+	},
+	"scripts": {
+		"build": "tsc",
+		"clean": "node clean.js",
+		"bot": "rootsdk start devhost"
+	},
+	"allowScripts": {
+		"@rootsdk/dev-tools@0.21.3": true
+	}
+}
